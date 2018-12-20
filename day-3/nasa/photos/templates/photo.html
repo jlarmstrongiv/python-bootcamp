@@ -7,7 +7,9 @@
   <title>Document</title>
 </head>
 <body>
-  Photo
-  <img src="{{ photo_url }}" style="max-width: 100%;" alt="">
+  <p><strong>Photo</strong></p>
+  <img src="{{ photo_comment.url }}" style="max-width: 100%;" alt="">
+  <p><strong>Comment</strong></p>
+  <p>{{ photo_comment.comment }}</p>
 </body>
 </html>

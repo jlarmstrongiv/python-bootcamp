@@ -18,8 +18,7 @@ def index(request):
 def photo_by_id(request, photo_id):
   if (request.method == 'GET'):
     photo_comment = PhotoComment.objects.get(id=photo_id)
-    photo_url = photo_comment.url
-    return render(request, 'photo.html', {'photo_url': photo_url})
+    return render(request, 'photo.html', {'photo_comment': photo_comment})
   return HttpResponse('Invalid Method')
 # 24 March
 def photo_by_date(request, date):
